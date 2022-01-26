@@ -1,4 +1,6 @@
 #13.
+myname <- "Lauren Temple"
+
 set.seed(2022)
 
 large_t <- NULL
