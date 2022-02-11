@@ -1,0 +1,110 @@
+---
+title: "Problem Set 1"
+author: "Lauren Temple"
+date: "1/28/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+2.2: 2, 5, 8, 12
+
+1.2: 6
+```{r}
+x <- 1/21 #1+2+3+4+5+6=21
+p1 <- x
+p2 <- 2*x
+p3 <- 3*x
+p4 <- 4*x
+p5 <- 5*x
+p6 <- 6*x
+
+even <- p2 + p4 + p6
+even
+```
+
+1.2: 7
+```{r}
+A <- 2/3
+B <- 1/2
+AB <- 1/4
+A+B-AB
+```
+
+1.2: 15
+```{r}
+jB <- .3
+mB <- .4
+noA1B <- 0.1
+
+P <- jB + mB
+
+P - noA1B
+```
+
+1.2: 31a
+```{r}
+p1 <- 1/4
+p2 <- 1/4
+
+p1*p2
+```
+
+31b
+```{r}
+rf <- .58
+lf <- .11
+rr <- .18
+lf <- .13
+
+```
+
+2.2: 2
+```{r}
+
+```
+
+
+2.2: 5
+```{r}
+a <- 1/exp(3)
+b <- 1/exp(4)
+b
+```
+
+2.2: 8
+```{r}
+b <- runif(10000)
+c <- runif(10000)
+
+bc <- b*c
+a <- which(bc < 0.5)
+
+na <- length(a)
+
+plot(b[a], c[a], col= "green")
+
+na/10000
+
+```
+```{r}
+library(pracma)
+
+options(digits = 4)
+
+fun <- function(x, y) 1
+
+integral2(fun,
+          xmin= 0.5,
+          xmax= 1,
+          ymin= 0.5,
+          ymax <- function(x)(1/(2*x))
+          )
+#only integrated the part of the graph that wasn't solid
+#if you add 0.75 to this result you will get the same as in the method above
+0.09657 + 0.75
+```
+
+
